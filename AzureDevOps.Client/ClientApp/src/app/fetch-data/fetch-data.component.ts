@@ -9,7 +9,7 @@ export class FetchDataComponent {
   public forecasts: WeatherForecast[];
 
   public Products: Product[];
-  private ProductURL: "https://localhost:44334/api/Poduct/";
+  private ProductURL = "https://localhost:44334/api/Product";
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     //http.get<WeatherForecast[]>(baseUrl + 'weatherforecast').subscribe(result => {
